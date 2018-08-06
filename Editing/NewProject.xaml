@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="Editing.NewProject"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Editing"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#303030">
+
+        <Grid Background="#303030">
+            <StackPanel Orientation="Vertical" Margin="100">
+                <TextBlock Text="NEW PROJECT" FontSize="36" Margin="0,5,0,20" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Foreground="White" TextAlignment="Center" FontFamily="Segoe UI Light"/>
+                <TextBlock Text="Project Name" Margin="0,0,0,4" TextAlignment="Left"
+               TextWrapping="Wrap" Width="300" Foreground="White"
+                VerticalAlignment="Center" FontSize="16"/>
+                <TextBox x:Name="ProjectnameTextBox" Width="300" Margin="0,0,0,20" Background="White"/>
+                <TextBlock Text="Where do you want to save your Project?"  Foreground="White" 
+               TextWrapping="Wrap" Width="300"
+               TextAlignment="Left"  VerticalAlignment="Center" Margin="0,0,0,3" FontSize="16"/>
+
+                <TextBox x:Name="SavepathTextBox" Margin="0,0,0,20" Width="300" Background="White"/>
+
+                <TextBlock Text="Aspect Ratio" Foreground="White" 
+               TextWrapping="Wrap" Margin="0" Width="300"
+               TextAlignment="Left"  VerticalAlignment="Center" FontSize="16"/>
+                <ComboBox x:Name="AratioTextBox" Width="300" HorizontalAlignment="Stretch" Margin="0,0,0,30" Background="White"/>
+               
+
+                    <Button x:Name="PassportSignInButton" Margin="0,0,0,30" Content="Create Project" VerticalAlignment="Center" Background="#FF407FF8" Foreground="White"
+         Width="138" HorizontalAlignment="Center"  />
+                <Button x:Name="settingButton" Margin="0,0,0,0" Foreground="White"
+         Width="40" Height="40"  HorizontalAlignment="Stretch" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="Assets/gear-option.png"/>
+                    </Button.Background>
+
+                </Button>
+
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

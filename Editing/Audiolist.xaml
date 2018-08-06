@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="Editing.Audiolist"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Editing"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#303030">
+
+        <Grid Background="#303030">
+            <StackPanel Orientation="Vertical" >
+                <RelativePanel Height="20px" Background="Gray">
+                    
+<Button x:Name="savebtn"  Foreground="White" HorizontalAlignment="Center"  VerticalAlignment="Center"   Width="17" Height="17" Margin="150,0,0,-4">
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="Assets/save-icon.png"/>
+
+                        </Button.Background>
+
+                    </Button>
+                    <Button HorizontalAlignment="Center"  Background="#FF407FF8" Content="Add more Music" Foreground="White" Width="150"  Height="28" FontSize="16" FontFamily="Calibri Light"/>
+                </RelativePanel>
+                <StackPanel HorizontalAlignment="Left" Width="150" >
+                    <TextBlock Text="Audio" Foreground="White" HorizontalAlignment="Center" Margin="20" FontFamily="Calibri Light" FontSize="36"/>
+                    <Button HorizontalAlignment="Center" Background="#FF407FF8" Content="Add more Music" Foreground="White" Width="150" Height="28" FontSize="16" FontFamily="Calibri Light"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
