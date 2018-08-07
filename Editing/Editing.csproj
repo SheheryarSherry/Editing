@@ -107,6 +107,9 @@
     <Compile Include="CreateProject.xaml.cs">
       <DependentUpon>CreateProject.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ExportVideo.xaml.cs">
+      <DependentUpon>ExportVideo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -122,10 +125,16 @@
     <None Include="Editing_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\computer-screen.png" />
+    <Content Include="Assets\facebook-logo-button.png" />
     <Content Include="Assets\gear-option.png" />
+    <Content Include="Assets\instagram-logo.png" />
+    <Content Include="Assets\notebook.png" />
     <Content Include="Assets\right-arrow.png" />
     <Content Include="Assets\save-icon.png" />
     <Content Include="Assets\settings.png" />
+    <Content Include="Assets\smartphone-screen.png" />
+    <Content Include="Assets\youtube-logo.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -153,6 +162,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CreateProject.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExportVideo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
