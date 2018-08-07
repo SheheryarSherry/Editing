@@ -110,6 +110,9 @@
     <Compile Include="ExportProgress.xaml.cs">
       <DependentUpon>ExportProgress.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ExportSuccessfull.xaml.cs">
+      <DependentUpon>ExportSuccessfull.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ExportVideo.xaml.cs">
       <DependentUpon>ExportVideo.xaml</DependentUpon>
     </Compile>
@@ -128,6 +131,7 @@
     <None Include="Editing_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\check.png" />
     <Content Include="Assets\computer-screen.png" />
     <Content Include="Assets\facebook-logo-button.png" />
     <Content Include="Assets\gear-option.png" />
@@ -169,6 +173,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ExportProgress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExportSuccessfull.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
