@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="Editing.Settings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Editing"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#303030">
+        <StackPanel Orientation="Vertical" Margin="100">
+
+            <TextBlock Text="Settings" FontSize="36" Margin="5"   TextAlignment="Center" Foreground="White" FontFamily="Arial Narrow"/>
+            <TextBlock Text="Set your general settings here" FontSize="20" Margin="20"   TextAlignment="Center" Foreground="White" FontFamily="Arial Narrow"/>
+            <TextBlock Text="Image Stabilisation" Foreground="White" 
+               TextWrapping="Wrap" Margin="0,5,0,0" Width="300"
+               TextAlignment="Center"  VerticalAlignment="Center" FontSize="16"/>
+            <ToggleSwitch HorizontalAlignment="Center" Margin="100,-5,0,0" Foreground="White"  IsOn="True"  />
+            <TextBlock Text="Magnetic Timeline" Foreground="White" 
+               TextWrapping="Wrap" Margin="0,5,0,0" Width="300"
+               TextAlignment="Center"  VerticalAlignment="Center" FontSize="16"/>
+            <ToggleSwitch  HorizontalAlignment="Center" IsOn="True" Foreground="white" Margin="100,0,0,0"/>
+            <TextBlock Text="Current Language" Foreground="White" 
+               TextWrapping="Wrap" Margin="0,5,0,0" Width="300"
+               TextAlignment="Center"  VerticalAlignment="Center" FontSize="16"/>
+            <RelativePanel HorizontalAlignment="Center">
+                <StackPanel HorizontalAlignment="Center" Width="75" x:Name="pan1">
+                    <Image Width="60" Height="60">
+                        <Image.Source>
+                            <BitmapImage UriSource="Assets/united-states.png"/>
+                        </Image.Source>
+                        
+                    </Image>
+                    <Image Width="16" Height="16" HorizontalAlignment="Right" Margin="0,-15,0,0">
+                        <Image.Source>
+                            <BitmapImage UriSource="Assets/success.png"/>
+                        </Image.Source>
+
+                    </Image>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center"  Margin="30,0,0,0" RelativePanel.RightOf="pan1" >
+                    <Image Width="60" Height="60">
+                        <Image.Source>
+                            <BitmapImage UriSource="Assets/germany.png"/>
+                        </Image.Source>
+                    </Image>
+                </StackPanel>
+            </RelativePanel>
+            <Button x:Name="DoneButton"  Content="Save Settings"  Background="#4082ff" Foreground="White"
+          HorizontalAlignment="Center" Margin="10,20,0,10" AutomationProperties.IsRequiredForForm="True" FontSize="12"/>
+
+
+
+
+        </StackPanel>
+    </Grid>
+</Page>
