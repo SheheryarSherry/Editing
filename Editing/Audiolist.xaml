@@ -10,22 +10,200 @@
     <Grid Background="#303030">
 
         <Grid Background="#303030">
-            <StackPanel Orientation="Vertical" >
-                <RelativePanel Height="20px" Background="Gray">
-                    
-<Button x:Name="savebtn"  Foreground="White" HorizontalAlignment="Center"  VerticalAlignment="Center"   Width="17" Height="17" Margin="150,0,0,-4">
-                        <Button.Background>
-                            <ImageBrush Stretch="Fill" ImageSource="Assets/save-icon.png"/>
+            <StackPanel x:Name="stkpan" Orientation="Vertical" >
+                <RelativePanel HorizontalAlignment="Stretch" Height="20px" Background="Gray">
 
-                        </Button.Background>
 
+                    <Button x:Name="savebtn" Background="#FF407FF8" Margin="150,0,0,0" VerticalAlignment="Bottom" Width="150" Height="20"  >
+                        <RelativePanel>
+                            <Image x:Name="imgbtn" Width="7" Source="Assets/save-icon.png" Margin="0,0,5,0"/>
+                            <TextBlock  VerticalAlignment="Center" Text="Save" Foreground="White" FontSize="10" RelativePanel.RightOf="imgbtn" Height="31" Margin="0,-4,0,-19"/>
+                        </RelativePanel>
                     </Button>
-                    <Button HorizontalAlignment="Center"  Background="#FF407FF8" Content="Add more Music" Foreground="White" Width="150"  Height="28" FontSize="16" FontFamily="Calibri Light"/>
+                    <Button Background="#FF407FF8" Margin="0,0,0,0" RelativePanel.AlignRightWithPanel="True" HorizontalAlignment="Right" Width="150" Height="20"   >
+                        <RelativePanel>
+                            <TextBlock x:Name="nextlbl"  VerticalAlignment="Center" Text="Next" Foreground="White" FontSize="10" Height="31" Margin="45,-4,0,-19"/>
+
+                            <Image x:Name="img" Width="30"  Height="10" Source="Assets/right-arrow.png" RelativePanel.RightOf="nextlbl"  Margin="50,0,0,0"/>
+                        </RelativePanel>
+                    </Button>
                 </RelativePanel>
-                <StackPanel HorizontalAlignment="Left" Width="150" >
-                    <TextBlock Text="Audio" Foreground="White" HorizontalAlignment="Center" Margin="20" FontFamily="Calibri Light" FontSize="36"/>
-                    <Button HorizontalAlignment="Center" Background="#FF407FF8" Content="Add more Music" Foreground="White" Width="150" Height="28" FontSize="16" FontFamily="Calibri Light"/>
-                </StackPanel>
+                <RelativePanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <StackPanel x:Name="sidemenupan" HorizontalAlignment="Left" Width="150" >
+                        <TextBlock Text="Audio" Foreground="White" HorizontalAlignment="Center" Margin="20" FontFamily="Calibri Light" FontSize="30"/>
+                        <Button HorizontalAlignment="Center" Background="#FF407FF8" Content="Add more Music" Foreground="White" Width="150" Height="28" FontSize="12" FontFamily="Calibri Light"/>
+                    </StackPanel>
+                    <StackPanel Margin="100,80,0,0" BorderBrush="White" HorizontalAlignment="Stretch" RelativePanel.RightOf="sidemenupan" Background="White" VerticalAlignment="Stretch">
+                        <ListView Background="#FF303030" HorizontalAlignment="Stretch" BorderThickness="0" >
+                            <RelativePanel Margin="0,10"  BorderThickness="0,1,0,1" Width="680" HorizontalAlignment="Stretch" BorderBrush="White" >
+                                <Image x:Name="audioimg" Width="60" Height="60" Margin="10">
+                                    <Image.Source>
+                                        <BitmapImage UriSource="Assets/musical-note.png"/>
+                                    </Image.Source>
+
+                                </Image>
+                                <StackPanel x:Name="descrptionpan" RelativePanel.RightOf="audioimg" Margin="10,10,10,10" Orientation="Vertical">
+                                    <TextBlock Text="Title.mp4" Foreground="White" FontWeight="Bold"/>
+                                    <TextBlock Text="interpret" Foreground="White" FontWeight="Bold"/>
+                                    <TextBlock Text="1:56min" Foreground="White" FontWeight="Bold"/>
+                                </StackPanel>
+
+                                <MediaElement x:Name="OutputMedia"  Margin="10" HorizontalAlignment="Stretch" Width="600" Height="60" VerticalAlignment="Center"  AutoPlay="False"/>
+
+                                <StackPanel x:Name="audioPan" RelativePanel.RightOf="descrptionpan" Margin="10" Orientation="Horizontal">
+                                    <Button Width="15" Height="15" Margin="20">
+                                        <Button.Background>
+                                            <ImageBrush Stretch="Fill" ImageSource="Assets/play-button.png"/>
+                                        </Button.Background>
+                                    </Button>
+                                    <Grid Background="Transparent" Width="300">
+                                        <Slider Margin="0.1" VerticalAlignment="Center"  HorizontalAlignment="Stretch" Style="{StaticResource CircleSlider}" />
+
+                                    </Grid>
+                                    <Button Width="15" Height="15" Margin="20">
+                                        <Button.Background>
+                                            <ImageBrush Stretch="Fill" ImageSource="Assets/speaker.png"/>
+                                        </Button.Background>
+                                    </Button>
+                                </StackPanel>
+                                
+
+                                <Button RelativePanel.AlignRightWithPanel="True"  x:Name="delbtn" Background="#FF407FF8"  VerticalAlignment="Bottom" Width="70" Height="79"  >
+                                    <RelativePanel>
+                                        <Image x:Name="delimgbtn" Width="30" Height="30" Source="Assets/rubbish-bin-delete-button.png" Margin="0,0,5,0"/>
+                                    </RelativePanel>
+                                </Button>
+
+                            </RelativePanel>
+                            <RelativePanel Margin="10" BorderThickness="0,1,0,1" BorderBrush="White" >
+                                <Image x:Name="audioimg1" Width="60" Height="60" Margin="10">
+                                    <Image.Source>
+                                        <BitmapImage UriSource="Assets/musical-note.png"/>
+                                    </Image.Source>
+
+                                </Image>
+                                <StackPanel x:Name="descrptionpan1" RelativePanel.RightOf="audioimg1" Margin="10,10,10,10" Orientation="Vertical">
+                                    <TextBlock Text="Title.mp4" Foreground="White" FontWeight="Bold"/>
+                                    <TextBlock Text="interpret" Foreground="White" FontWeight="Bold"/>
+                                    <TextBlock Text="1:56min" Foreground="White" FontWeight="Bold"/>
+                                </StackPanel>
+
+                                <MediaElement x:Name="OutputMedia1" RelativePanel.RightOf="descrptionpan1" Width="500" Height="60" VerticalAlignment="Center"  AutoPlay="False"/>
+                                <StackPanel x:Name="audioPan1" RelativePanel.RightOf="descrptionpan1" Margin="10" Orientation="Horizontal">
+                                    <Button Width="15" Height="15" Margin="20">
+                                        <Button.Background>
+                                            <ImageBrush Stretch="Fill" ImageSource="Assets/play-button.png"/>
+                                        </Button.Background>
+                                    </Button>
+                                    <Grid Background="Transparent" Width="300">
+                                        <Slider Margin="0.1" VerticalAlignment="Center"  HorizontalAlignment="Stretch" Style="{StaticResource CircleSlider}" />
+
+                                    </Grid>
+                                    <Button Width="15" Height="15" Margin="20">
+                                        <Button.Background>
+                                            <ImageBrush Stretch="Fill" ImageSource="Assets/speaker.png"/>
+                                        </Button.Background>
+                                    </Button>
+                                </StackPanel>
+
+                                <Grid Grid.Row="0" HorizontalAlignment="Left">
+                                    <StackPanel Orientation="Horizontal">
+                                    </StackPanel>
+                                </Grid>
+                                <Button RelativePanel.AlignRightWithPanel="True" x:Name="delbtn1" Background="#FF407FF8" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="70" Height="79"  >
+                                    <RelativePanel>
+                                        <Image x:Name="delimgbtn1" Width="30" Height="30" Source="Assets/rubbish-bin-delete-button.png" Margin="0,0,5,0"/>
+                                    </RelativePanel>
+                                </Button>
+
+                            </RelativePanel>
+                            <RelativePanel Margin="10" BorderThickness="0,0.5,0,0.5" BorderBrush="White" >
+                                <Image x:Name="audioimg2" Width="60" Height="60" Margin="10">
+                                    <Image.Source>
+                                        <BitmapImage UriSource="Assets/musical-note.png"/>
+                                    </Image.Source>
+
+                                </Image>
+                                <StackPanel x:Name="descrptionpan2" RelativePanel.RightOf="audioimg2" Margin="10,10,10,10" Orientation="Vertical">
+                                    <TextBlock Text="Title.mp4" Foreground="White" FontWeight="Bold"/>
+                                    <TextBlock Text="interpret" Foreground="White" FontWeight="Bold"/>
+                                    <TextBlock Text="1:56min" Foreground="White" FontWeight="Bold"/>
+                                </StackPanel>
+
+                                <MediaElement x:Name="OutputMedia2" RelativePanel.RightOf="descrptionpan2" Width="500" Height="60" VerticalAlignment="Center"  AutoPlay="False"/>
+                                <StackPanel x:Name="audioPan2" RelativePanel.RightOf="descrptionpan2" Margin="10" Orientation="Horizontal">
+                                    <Button Width="15" Height="15" Margin="20">
+                                        <Button.Background>
+                                            <ImageBrush Stretch="Fill" ImageSource="Assets/play-button.png"/>
+                                        </Button.Background>
+                                    </Button>
+                                    <Grid Background="Transparent" Width="300">
+                                        <Slider Margin="0.1" VerticalAlignment="Center"  HorizontalAlignment="Stretch" Style="{StaticResource CircleSlider}" />
+
+                                    </Grid>
+                                    <Button Width="15" Height="15" Margin="20">
+                                        <Button.Background>
+                                            <ImageBrush Stretch="Fill" ImageSource="Assets/speaker.png"/>
+                                        </Button.Background>
+                                    </Button>
+                                </StackPanel>
+
+                                <Grid Grid.Row="0" HorizontalAlignment="Left">
+                                    <StackPanel Orientation="Horizontal">
+                                    </StackPanel>
+                                </Grid>
+                                <Button RelativePanel.AlignRightWithPanel="True" x:Name="delbtn2" Background="#FF407FF8" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="70" Height="79"  >
+                                    <RelativePanel>
+                                        <Image x:Name="delimgbtn2" Width="30" Height="30" Source="Assets/rubbish-bin-delete-button.png" Margin="0,0,5,0"/>
+                                    </RelativePanel>
+                                </Button>
+
+                            </RelativePanel>
+                            <RelativePanel Margin="10" BorderThickness="0,0.5,0,0.5" BorderBrush="White" >
+                                <Image x:Name="audioimg3" Width="60" Height="60" Margin="10">
+                                    <Image.Source>
+                                        <BitmapImage UriSource="Assets/musical-note.png"/>
+                                    </Image.Source>
+
+                                </Image>
+                                <StackPanel x:Name="descrptionpan3" RelativePanel.RightOf="audioimg3" Margin="10,10,10,10" Orientation="Vertical">
+                                    <TextBlock Text="Title.mp4" Foreground="White" FontWeight="Bold"/>
+                                    <TextBlock Text="interpret" Foreground="White" FontWeight="Bold"/>
+                                    <TextBlock Text="1:56min" Foreground="White" FontWeight="Bold"/>
+                                </StackPanel>
+
+                                <MediaElement x:Name="OutputMedia3" RelativePanel.RightOf="descrptionpan3" Width="500" Height="60" VerticalAlignment="Center"  AutoPlay="False"/>
+                                <StackPanel x:Name="audioPan3" RelativePanel.RightOf="descrptionpan3" Margin="10" Orientation="Horizontal">
+                                    <Button Width="15" Height="15" Margin="20">
+                                        <Button.Background>
+                                            <ImageBrush Stretch="Fill" ImageSource="Assets/play-button.png"/>
+                                        </Button.Background>
+                                    </Button>
+                                    <Grid Background="Transparent" Width="300">
+                                        <Slider Margin="0.1" VerticalAlignment="Center"  HorizontalAlignment="Stretch" Style="{StaticResource CircleSlider}" />
+
+                                    </Grid>
+                                    <Button Width="15" Height="15" Margin="20">
+                                        <Button.Background>
+                                            <ImageBrush Stretch="Fill" ImageSource="Assets/speaker.png"/>
+                                        </Button.Background>
+                                    </Button>
+                                </StackPanel>
+
+                                <Grid Grid.Row="0" HorizontalAlignment="Left">
+                                    <StackPanel Orientation="Horizontal">
+                                    </StackPanel>
+                                </Grid>
+                                <Button RelativePanel.AlignRightWithPanel="True" x:Name="delbtn3" Background="#FF407FF8" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="70" Height="79"  >
+                                    <RelativePanel>
+                                        <Image x:Name="delimgbtn3" Width="30" Height="30" Source="Assets/rubbish-bin-delete-button.png" Margin="0,0,5,0"/>
+                                    </RelativePanel>
+                                </Button>
+
+                            </RelativePanel>
+                        </ListView>
+                    </StackPanel>
+                </RelativePanel>
             </StackPanel>
         </Grid>
     </Grid>

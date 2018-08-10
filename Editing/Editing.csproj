@@ -140,11 +140,15 @@
     <Content Include="Assets\gear-option.png" />
     <Content Include="Assets\germany.png" />
     <Content Include="Assets\instagram-logo.png" />
+    <Content Include="Assets\musical-note.png" />
     <Content Include="Assets\notebook.png" />
+    <Content Include="Assets\play-button.png" />
     <Content Include="Assets\right-arrow.png" />
+    <Content Include="Assets\rubbish-bin-delete-button.png" />
     <Content Include="Assets\save-icon.png" />
     <Content Include="Assets\settings.png" />
     <Content Include="Assets\smartphone-screen.png" />
+    <Content Include="Assets\speaker.png" />
     <Content Include="Assets\success.png" />
     <Content Include="Assets\united-states.png" />
     <Content Include="Assets\youtube-logo.png" />
