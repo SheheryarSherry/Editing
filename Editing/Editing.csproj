@@ -126,6 +126,9 @@
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VideosList.xaml.cs">
+      <DependentUpon>VideosList.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -134,12 +137,15 @@
     <None Include="Editing_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Buck.png" />
     <Content Include="Assets\check.png" />
     <Content Include="Assets\computer-screen.png" />
+    <Content Include="Assets\error.png" />
     <Content Include="Assets\facebook-logo-button.png" />
     <Content Include="Assets\gear-option.png" />
     <Content Include="Assets\germany.png" />
     <Content Include="Assets\instagram-logo.png" />
+    <Content Include="Assets\left-arrow.png" />
     <Content Include="Assets\musical-note.png" />
     <Content Include="Assets\notebook.png" />
     <Content Include="Assets\play-button.png" />
@@ -148,9 +154,12 @@
     <Content Include="Assets\save-icon.png" />
     <Content Include="Assets\settings.png" />
     <Content Include="Assets\smartphone-screen.png" />
+    <Content Include="Assets\speaker-filled.png" />
     <Content Include="Assets\speaker.png" />
     <Content Include="Assets\success.png" />
     <Content Include="Assets\united-states.png" />
+    <Content Include="Assets\video-camera.png" />
+    <Content Include="Assets\videothumb.jpg" />
     <Content Include="Assets\youtube-logo.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -203,6 +212,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VideosList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
