@@ -12,7 +12,7 @@
         <Grid Background="#303030">
             <StackPanel x:Name="stkpan" Orientation="Vertical" >
                 <RelativePanel HorizontalAlignment="Stretch" Height="20px" Background="Gray">
-                    <Button x:Name="bckbtn" Background="Gray" RelativePanel.AlignLeftWithPanel="True"  VerticalAlignment="Bottom" Width="150" Height="20"  >
+                    <Button x:Name="bckbtn" Background="Gray" RelativePanel.AlignLeftWithPanel="True"  VerticalAlignment="Bottom" Width="150" Height="20" Click="bckbtn_Click"  >
                         <RelativePanel>
                             <Image x:Name="bckimgbtn" Width="7" Source="Assets/left-arrow.png" Margin="-100,0,5,0"/>
                             <TextBlock  VerticalAlignment="Center" Text="Back" Foreground="White" FontSize="10" RelativePanel.RightOf="bckimgbtn"  Height="31" Margin="0,-4,0,-19"/>

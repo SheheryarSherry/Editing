@@ -29,7 +29,7 @@
                
 
                     <Button x:Name="PassportSignInButton" Margin="0,0,0,30" Content="Create Project" VerticalAlignment="Center" Background="#FF407FF8" Foreground="White"
-         Width="138" HorizontalAlignment="Center"  />
+         Width="138" HorizontalAlignment="Center" Click="PassportSignInButton_Click"  />
                 <Button x:Name="settingButton" Margin="0,0,0,0" Foreground="White"
          Width="40" Height="40"  HorizontalAlignment="Stretch" >
                     <Button.Background>

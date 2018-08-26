@@ -15,7 +15,7 @@
                 <TextBlock Text="Here you can add your clips &amp; Images " FontSize="28" Margin="5"   TextAlignment="Center" Foreground="White" FontFamily="Calibri Light" />
                 <TextBlock x:Name="ErrorMessage" Text="" FontSize="20" Margin="4" Foreground="Red" TextAlignment="Center"/>
                 <Button x:Name="AddmusicButton" Content="Add Video" Background="#FF407FF8" Foreground="White"
-         Width="110" HorizontalAlignment="Center" Margin="10" AutomationProperties.IsRequiredForForm="True" FontSize="14"/>
+         Width="110" HorizontalAlignment="Center" Margin="10" AutomationProperties.IsRequiredForForm="True" FontSize="14" Click="AddmusicButton_Click"/>
                 
                
                 <TextBlock Text="Need Help?" Foreground="White" Margin="0,150,0,7"
@@ -42,7 +42,7 @@
 
 
                 <Button x:Name="settingButton" Foreground="White"
-         Width="20" Height="20" HorizontalAlignment="Center" Margin="5" ManipulationMode="Rotate" >
+         Width="20" Height="20" HorizontalAlignment="Center" Margin="5" ManipulationMode="Rotate" Click="settingButton_Click" >
                     <Button.Background>
                         <ImageBrush Stretch="Fill" ImageSource="Assets/gear-option.png"/>
                     </Button.Background>

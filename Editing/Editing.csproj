@@ -104,6 +104,7 @@
     <Compile Include="Audiolist.xaml.cs">
       <DependentUpon>Audiolist.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AuthService.cs" />
     <Compile Include="CreateProject.xaml.cs">
       <DependentUpon>CreateProject.xaml</DependentUpon>
     </Compile>
@@ -116,6 +117,10 @@
     <Compile Include="ExportVideo.xaml.cs">
       <DependentUpon>ExportVideo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Login\Device.cs" />
+    <Compile Include="Login\MicrosoftPassportHelper.cs" />
+    <Compile Include="Login\MockStore.cs" />
+    <Compile Include="Login\UserAccount.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

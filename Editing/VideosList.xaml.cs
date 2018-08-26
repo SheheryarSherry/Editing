@@ -26,5 +26,10 @@ namespace Editing
         {
             this.InitializeComponent();
         }
+
+        private void bckbtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(AddVideo));
+        }
     }
 }
