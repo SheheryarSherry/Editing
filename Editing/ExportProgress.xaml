@@ -17,7 +17,7 @@
                 <ProgressBar x:Name="progbar" Width="200" Value="30" Margin="0,20,0,0"  HorizontalAlignment="Center"  />
                 
                 <Button x:Name="DoneButton" IsEnabled="False"  Content="Done"  Background="#404040" Foreground="White"
-         Width="100" HorizontalAlignment="Center" Margin="0,50,0,0" AutomationProperties.IsRequiredForForm="True" FontSize="14"/>
+         Width="100" HorizontalAlignment="Center" Margin="0,50,0,0" AutomationProperties.IsRequiredForForm="True" FontSize="14" Click="DoneButton_Click"/>
                 <TextBlock Text="Need Help?" Foreground="White" Margin="0,0,0,7"
                TextWrapping="Wrap" Width="300"
                TextAlignment="Center" VerticalAlignment="Center" FontSize="12" FontWeight="Bold"/>

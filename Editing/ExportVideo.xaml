@@ -73,7 +73,7 @@
                TextAlignment="Left"  VerticalAlignment="Center" FontSize="16"/>
                 <ComboBox x:Name="ResolutionTextBox" Width="300" HorizontalAlignment="Stretch" Margin="0,0,0,30" Background="White" PlaceholderText="1080 FullHD"/>
                 <Button x:Name="AddmusicButton" Content="Export Now!" Background="#FFFF40F8" Foreground="White"
-         Width="110" HorizontalAlignment="Center" Margin="0" AutomationProperties.IsRequiredForForm="True" FontSize="14"/>
+         Width="110" HorizontalAlignment="Center" Margin="0" AutomationProperties.IsRequiredForForm="True" FontSize="14" Click="AddmusicButton_Click"/>
                 <TextBlock Text="Need Help?" Foreground="White" Margin="0,5,0,0"
                TextWrapping="Wrap" Width="300"
                TextAlignment="Center" VerticalAlignment="Center" FontSize="12" FontWeight="Bold"/>

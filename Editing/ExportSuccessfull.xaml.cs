@@ -26,5 +26,10 @@ namespace Editing
         {
             this.InitializeComponent();
         }
+
+        private void DoneButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(NewProject));
+        }
     }
 }

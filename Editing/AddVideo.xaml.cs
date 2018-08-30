@@ -40,11 +40,9 @@ namespace Editing
         private MediaComposition Composition;
         private StorageFile pickedFile;
         private MediaStreamSource mediaStreamSource;
-
         private async void AddmusicButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(VideosList));
-
         }
 
         private void settingButton_Click(object sender, RoutedEventArgs e)

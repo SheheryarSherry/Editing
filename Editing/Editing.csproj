@@ -131,6 +131,7 @@
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Utils\Helper.cs" />
     <Compile Include="VideosList.xaml.cs">
       <DependentUpon>VideosList.xaml</DependentUpon>
     </Compile>

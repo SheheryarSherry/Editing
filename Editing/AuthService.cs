@@ -10,10 +10,10 @@ using Windows.Storage.Streams;
 
 namespace Editing
 {
-    class AuthService
+   public class AuthService
     {
         private static AuthService _instance;
-        public AuthService instance
+        public static AuthService instance
         {
             get
             {
@@ -31,15 +31,15 @@ namespace Editing
         {
             return _mockstore.GetUserId(username);
         }
-        public UserAccount GetUserAccount(Guid userId)
-        {
-            return _mockstore.GetUserAccount(userId);
-        }
+        //public UserAccount GetUserAccount(Guid userId)
+        //{
+        //    return _mockstore.GetUserAccount(userId);
+        //}
 
-        public List<UserAccount> GetUserAccountsForDevice(Guid deviceId)
-        {
-            return _mockstore.GetUserAccountsForDevice(deviceId);
-        }
+        //public List<UserAccount> GetUserAccountsForDevice(Guid deviceId)
+        //{
+        //    return _mockstore.GetUserAccountsForDevice(deviceId);
+        //}
 
         public void Register(string username)
         {
@@ -61,22 +61,22 @@ namespace Editing
             _mockstore.deviceupdateDetails(userId,DeviceId,publicKey,keyAttestationResult);
         }
 
-        public bool ValidationCredentials(string username,string password)
-        {
-            Guid userId = GetUserId(username);
-            if (userId != Guid.Empty)
-            {
-                UserAccount account = GetUserAccount(userId);
-                if (account != null)
-                {
-                    if (string.Equals(password,account.Password))
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
+        //public bool ValidationCredentials(string username,string password)
+        //{
+        //    Guid userId = GetUserId(username);
+        //    if (userId != Guid.Empty)
+        //    {
+        //        UserAccount account = GetUserAccount(userId);
+        //        if (account != null)
+        //        {
+        //            if (string.Equals(password,account.Password))
+        //            {
+        //                return true;
+        //            }
+        //        }
+        //    }
+        //    return false;
+        //}
 
         public IBuffer RequestChallenge()
         {

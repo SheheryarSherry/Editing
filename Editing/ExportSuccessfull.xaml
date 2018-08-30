@@ -19,7 +19,7 @@
 
 
             <Button x:Name="DoneButton"  Content="Done"  Background="#FF407FF8" Foreground="White"
-         Width="100" HorizontalAlignment="Center" Margin="0,90,0,10" AutomationProperties.IsRequiredForForm="True" FontSize="14"/>
+         Width="100" HorizontalAlignment="Center" Margin="0,90,0,10" AutomationProperties.IsRequiredForForm="True" FontSize="14" Click="DoneButton_Click"/>
             <TextBlock Text="Need Help?" Foreground="White" Margin="0,0,0,7"
                TextWrapping="Wrap" Width="300"
                TextAlignment="Center" VerticalAlignment="Center" FontSize="12" FontWeight="Bold"/>
